@@ -75,7 +75,3 @@ The final table has one row per strategy and these columns:
 Accuracy scores only `company`, `role`, and `years_experience_required`. The notes field and `id` are not part of the exact-match score. Year values are normalised so values such as `5+` and `5` can match. Missing experience should be represented as `null` to match the reference for `j10`; a prompt that returns `0` will be scored as incorrect for that field. Review the prompts and edge cases before concluding that one strategy is better, and record changes to prompts or configuration when comparing runs.
 
 The table is a comparison over this small dataset, not proof that a strategy will perform best on every task. Consider accuracy, parse rate, latency, and cost together, and inspect individual outputs for errors hidden by averages. Results can vary between runs because model responses and judge ratings may vary.
-
-## Write up
-
-Use `mp1_writeup.md` to record which strategy performed best and on what dimension, what surprised you, which strategy you would use first in your own domain, and what you would test next. Include any prompt changes that affect the comparison.
